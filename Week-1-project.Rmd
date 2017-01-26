@@ -1,6 +1,6 @@
 # Week 1 Project  
 
-## Your name should appear here!
+## Brett Graham
 
 <!-- leave this material as is -->
 Compiled on `r date()`.
@@ -10,4 +10,10 @@ library(DataComputing)
 ```
 <!-- put your content after this line -->
 
-Here is my content!
+Otto Frederick Rohwedder invented the first bread-slicing machine in 1928.
+
+* [Sliced bread](https://en.wikipedia.org/wiki/Sliced_bread) is very convenient.
+* Often described as "the greatest forward step in the baking industry since bread was wrapped."
+* He was from Iowa.
+
+![Sliced Bread](https://upload.wikimedia.org/wikipedia/commons/9/9b/St._Louis_electrical_bread_slicer%2C_1930.png)
