@@ -1,6 +1,6 @@
 # Week 5 Project
 
-## Your name should appear here!
+## Brett Graham
 
 <!-- leave this material as is -->
 Compiled on `r date()`.
@@ -10,4 +10,23 @@ library(DataComputing)
 ```
 <!-- put your content after this line -->
 
-Here is my content!
+```{r}
+companies <- c("HIMX", "HON", "FB")
+Prices <- 
+  read_stock_prices(companies, what="daily", start_year=2000, end_year=2015)
+
+View(Prices)
+
+```
+
+
+```{r}
+Prices %>% ggplot(aes(x=date, y=close)) + geom_point(size =.5,show.legend = TRUE)
+
+mytable <- data.frame(action = c("buy", "sell"), date = c("2005-12-26","2015-12-26"))
+
+# profitTable <- Prices %>% inner_join(mytable, by = c("date"= "date"))
+
+
+
+```
