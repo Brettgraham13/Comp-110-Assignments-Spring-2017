@@ -1,6 +1,6 @@
 # Week 3 Short Answer Questions
 
-## Your name should appear here!
+## Brett Graham
 
 <!-- leave this material as is -->
 Compiled on `r date()`.
@@ -11,3 +11,59 @@ library(DataComputing)
 <!-- put your content after this line -->
 
 Here is my content!
+
+5.1
+```{r}
+library(mosaicData)
+```
+
+
+5.2
+```{r}
+WorldMap(HappinessIndex,key = "country" , fill = "corruption")
+```
+
+6.5
+States and Polling Organizations
+
+6.6
+D. Rectangle. Graphical attribute: color and text.
+
+6.7
+D. NYT poll probability for the Democratic candidate.
+
+6.8
+```{r}
+Small <-
+  NCHS %>%
+  sample_n(size=5000)
+```
+
+The frame shows the relationship between bmi and weight. The specific glyph on the plot is a cirle that denotes whether or not the person is a smoker.
+
+7.1
+a. Mean()
+b. Variable1 / Variable2
+c. rank()
+d. filter()
+e. %>% datatable groupby(A,X)
+f. datatable %>% groupby(A,B) %>% summarise(value = max(X))
+
+7.4
+a. The argumenet in group_by should not have quotes. 
+b. summarise() needs an equals sign in the argument.
+
+7.5
+a. group_by(BabyNames, sex)
+b. filter(BabyNames, sex=="F")
+c. BabyNames %>% group_by(sex) %>% filter(count > 20)
+d. summarise(BabyNames, total = sum(count))
+e. BabyNames %>% group_by(name,count)
+
+
+7.11
+a. sex, count, meanAge
+b. diagnosis, count, meanAge
+c. sex, diagnosis, count , meanAge
+d. Age, diagnosis, count, meanAge
+e. Age, count, meanAge

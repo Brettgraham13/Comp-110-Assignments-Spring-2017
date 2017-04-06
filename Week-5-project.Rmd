@@ -15,8 +15,6 @@ companies <- c("HIMX", "HON", "FB")
 Prices <- 
   read_stock_prices(companies, what="daily", start_year=2000, end_year=2015)
 
-View(Prices)
-
 ```
 
 
